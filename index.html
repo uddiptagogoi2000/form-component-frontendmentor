@@ -15,32 +15,34 @@
   <title>Frontend Mentor | Intro component with sign up form</title>
 </head>
 <body>
-  <main id="showcase" class="container">
-    <div id="showcase-heading">
-      <h1>Learn to code by watching others</h1>
-      <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
-        but understanding how developers think is invaluable.</p>
-    </div>
-    <div id="showcase-form">
-      <div><p><span class="text-bold">Try it free 7 days</span> then $20/mo. thereafter</p></div>
-      <form action="#">
-        <div>
-          <input type="text" name="firstName" id="firstName" placeholder="First Name">
-        </div>
-        <div>
-          <input type="text" name="lastName" id="lastName" placeholder="Last Name">
-        </div>
-        <div>
-          <input type="email" name="email" id="email" placeholder="Email Address">
-        </div>
-        <div>
-          <input type="password" name="password" id="password" placeholder="Password">
-        </div>
-        <input type="button" value="Claim your free trial">
-        <footer class="form-footer">
-          <p>By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
-        </footer>
-      </form>
+  <main id="showcase">
+    <div id="showcase-container">
+      <div id="showcase-heading">
+        <h1 class="l-heading">Learn to code by watching others</h1>
+        <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+          but understanding how developers think is invaluable.</p>
+      </div>
+      <div id="showcase-form">
+        <div><p><span class="text-bold">Try it free 7 days</span> then $20/mo. thereafter</p></div>
+        <form action="#">
+          <div>
+            <input type="text" name="firstName" id="firstName" placeholder="First Name">
+          </div>
+          <div>
+            <input type="text" name="lastName" id="lastName" placeholder="Last Name">
+          </div>
+          <div>
+            <input type="email" name="email" id="email" placeholder="Email Address">
+          </div>
+          <div>
+            <input type="password" name="password" id="password" placeholder="Password">
+          </div>
+          <input type="button" value="Claim your free trial" class="btn-primary">
+          <footer class="form-footer">
+            <p>By clicking the button, you are agreeing to our <span class="text-red">Terms and Services</span></p>
+          </footer>
+        </form>
+      </div>
     </div>
   </main>
 </body>
