@@ -1,0 +1,26 @@
+:root {
+  /* colors */
+  --color-red: hsl(0, 100%, 74%);
+  --color-green: hsl(154, 59%, 51%);
+  --color-blue: hsl(248, 32%, 49%);
+  --color-dark-blue: hsl(249, 10%, 26%);
+  --color-grayish-blue: hsl(246, 25%, 77%);
+}
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* core */
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+#showcase {
+  min-height: 100vh;
+  background: url("../images/bg-intro-desktop.png") no-repeat center
+    center/cover;
+}
