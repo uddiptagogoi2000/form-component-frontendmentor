@@ -14,13 +14,122 @@
   box-sizing: border-box;
 }
 
+/* Utility Classes */
+
+.btn-primary {
+  color: #fff !important;
+  background: var(--color-green);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
+  cursor: pointer;
+}
+
+.text-bold {
+  font-weight: 600;
+}
+
+.l-heading {
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #fff;
+  line-height: 1.1;
+  margin-bottom: 1.3rem;
+}
+
+.text-red {
+  color: var(--color-red);
+  font-weight: 700;
+}
+
 /* core */
 body {
   font-family: "Poppins", sans-serif;
 }
 
 #showcase {
-  min-height: 100vh;
+  min-width: 100vh;
+  background-color: var(--color-red);
+  margin: auto;
+  position: relative;
+}
+
+#showcase::before {
+  content: "";
   background: url("../images/bg-intro-desktop.png") no-repeat center
     center/cover;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+#showcase-container {
+  min-height: 100vh;
+  width: 1080px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-content: center;
+  margin: auto;
+}
+
+#showcase-container > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
+  z-index: 1;
+}
+
+#showcase-form > div:first-child {
+  width: 100%;
+  color: #fff;
+  padding: 1rem 0;
+  background-color: var(--color-blue);
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+#showcase-form form {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+#showcase-form form input {
+  width: 100%;
+  padding: 0.8rem 2rem;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 1.1rem;
+  border: 1.5px solid #eee;
+  border-radius: 5px;
+  font-weight: 600;
+  color: var(--color-dark-blue);
+}
+
+#showcase-heading > p {
+  color: #fff;
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+form .form-footer {
+  min-width: 436px;
+  padding: 0 2rem;
+  text-align: center;
+  font-size: 0.6rem;
+  color: var(--color-grayish-blue);
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+/* Box-shadow */
+#showcase-form > div:first-child,
+#showcase-form form {
+  box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.2);
 }
